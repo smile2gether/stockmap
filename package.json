@@ -1,0 +1,28 @@
+{
+  "name": "stockmap",
+  "version": "1.0.0",
+  "description": "My priceless Nuxt.js project",
+  "author": "smile2gether",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate",
+    "test": "jest"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "d3": "^5.14.2",
+    "express": "^4.16.4",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.0.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-jest": "^24.1.0",
+    "jest": "^24.1.0",
+    "nodemon": "^1.18.9",
+    "vue-jest": "^4.0.0-0"
+  }
+}
