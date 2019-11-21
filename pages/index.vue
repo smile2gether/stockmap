@@ -6,8 +6,6 @@
   >
     <v-flex
       xs12
-      sm8
-      md6
     >
       <v-card>
         <v-card-title class="headline">
