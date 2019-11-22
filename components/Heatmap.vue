@@ -65,7 +65,7 @@ export default {
     let myColor = d3.scaleLinear()
       .range(["#fff", "#69b3a2"])
       .domain([0, 1]);
-    d3.csv('/heatmap_data.csv', function (data) {
+    d3.csv('./heatmap_data.csv', function (data) {
       data.group = moment(data.group, 'D-MMM-YY').toDate();
       svg.selectAll()
         .data(data.group+':'+data.variable)
@@ -80,3 +80,9 @@ export default {
   }
 }
 </script>
+
+<style>
+#dataviz {
+  overflow: scroll;
+}
+</style>
