@@ -1,31 +1,38 @@
 <template>
   <v-layout
-    column
+    row wrap
     justify-center
     align-center
   >
-    <v-flex xs12>
+    <v-flex xs12 md6 px-2>
       <v-card>
         <v-card-title class="headline text-center">
-          Welcome to Stock Map!
+          Heat Map
         </v-card-title>
-        <!--<line-chart></line-chart>-->
         <heatmap></heatmap>
+      </v-card>
+    </v-flex>
+    <v-flex xs12 md6 px-2>
+      <v-card>
+        <v-card-title class="headline text-center">
+          Parallel
+        </v-card-title>
+        <parallel></parallel>
       </v-card>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
-import Heatmap from '../components/Heatmap.vue'
-// import LineChart from "../components/LineChart";
+import Heatmap from '../components/Heatmap.vue';
+import Parallel from "../components/Parallel";
 
 export default {
   data: () => ({
   }),
   components: {
-    // LineChart,
-    'heatmap': Heatmap
+    Heatmap,
+    Parallel
   }
 }
 </script>
